@@ -22,7 +22,10 @@ function randomKey ()
 function Message ({ message } : MessageProps)
 {
     return(
-        <li key={randomKey()} className="message">
+        <li
+            key={randomKey()}
+            className="message"
+        >
             <span className="messageAuthor">{message.author.name}</span>
             <span className="messageContent">{message.content}</span>
         </li>
