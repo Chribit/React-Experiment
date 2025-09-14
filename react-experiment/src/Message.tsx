@@ -11,19 +11,15 @@ export type MessageT = {
 };
 
 type MessageProps = {
-    message : MessageT
+    key : number;
+    message : MessageT;
 }
 
-function randomKey ()
-{
-    return Math.floor(Math.random() * 999999999);
-}
-
-function Message ({ message } : MessageProps)
+function Message ({ key, message } : MessageProps)
 {
     return(
         <li
-            key={randomKey()}
+            key={key}
             className="message"
         >
             <span className="messageAuthor">{message.author.name}</span>

@@ -50,8 +50,11 @@ function App ()
             <h1>Intergalactic Chat</h1>
             <ul className="messages">
                 {
-                    messages.map((message : MessageT) => (
-                        <Message message={message} />
+                    messages.map((message : MessageT, index : number) => (
+                        <Message
+                            key={index}
+                            message={message}
+                        />
                     ))
                 }
             </ul>
