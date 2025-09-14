@@ -1,0 +1,9 @@
+.messageAuthor {
+    display: block;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.messageContent {
+    display: block;
+}
